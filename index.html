@@ -14,30 +14,27 @@
     </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main> <div class="text-center">
-        <h1> Lucky Me Lottery </h1>
-        <h3> Type names and see if you are lucky! </h3>
- </div>
-    <!-- input for number of ppl-->
     <div class="container mt-5">
         <div class="row">
-    <label for="nameInputBox" class="form-label"> Enter the names  </label>
-    <input type="text" class="form-control" id="nameInputBox" placeholder="Enter Names"/>
-
-<button onclick="addNames()"> Enter </button>
-<div class="text-center"> 
-<div id="nameDisplayDiv"> Here are the names </div></div>
-
-<button onclick="addNames()"> Choose a name: </button>
-<div id="selectedNameDisplay"> Here is the name choosen: </div></div>
-
-</main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
+            <div class="col-12 text-center">
+                <h1>Lucky Me Lottery</h1>
+                <p>Add names to the list by typing them one. To display a name at random, use the "Pick a Random name button below the list.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group mb-3">
+                    <input type="text" id="nameInput" class="form-control" placeholder="Enter a name">
+                    <div class="input-group-append">
+                        <button id="addNameBtn" class="btn btn-primary">Add Name</button>
+                    </div>
+                </div>
+                <ul id="nameList" class="list-group"></ul>
+                <div id="randomName" class="mt-3 text-center"></div>
+                <button id="pickRandomBtn" class="btn btn-primary mt-3">Pick Random Name</button>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -46,8 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
