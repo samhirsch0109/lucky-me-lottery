@@ -1,3 +1,60 @@
 body {
-    background-color: azure;
+    background-color: rgb(216, 223, 237);
 }
+
+h1 {
+    color: #164a82; 
+    margin-bottom: 20px; 
+    font-family: "Rubik Scribble", system-ui;
+}
+
+p {
+    color: #1971be; 
+    font-size: larger;
+}
+
+/* Style the input box */
+#nameInput {
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+
+/* Style the Add Name button */
+#addNameBtn {
+    border-radius: 10px;
+    background-color: rgb(122, 148, 203);
+    border: none;
+}
+#addNameBtn:hover {
+    background-color: rgb(25, 78, 118);
+}
+
+#pickRandomBtn {
+    background-color: rgb(122, 148, 203);
+    border: none;
+}
+#pickRandomBtn:hover {
+    background-color: rgb(25, 78, 118);
+}
+
+/* Style the list of names */
+.list-group-item {
+    background-color: rgb(152, 122, 184);
+    color: rgb(172, 172, 222);
+}
+#pickRandomBtn {
+    border-radius: 30px;
+}
+
+#randomName {
+    font-size: 24px;
+    font-weight: bold;
+    color: #878ec7;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: center;
+    font-family: Oswald;
+}
+

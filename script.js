@@ -4,10 +4,18 @@ function addName () {
   //get a trimmed version of the name from the input box
   const nameInput = document.getElementById('nameInput')
   const name = nameInput.value.trim()
+
+  if (name === '') {
+    // Display an error message
+    alert('Please enter a name!');
+    return; // Exit the function without adding an empty name
+}
+
   nameArray.push(name)
   displayNames()
   nameInput.value = ''
 }
+
 function displayNames(){
     const nameList = document.getElementById('nameList')//get UL element 
     nameList.innerHTML = '' //clears the list 
@@ -40,12 +48,14 @@ function pickRandomName () {
 
   randomNameDiv.textContent = randomName
 
+  randomNameDiv.innerHTML = `Congrats <span class="color">${randomName}</span>, you were chosen!`
+
+
   nameArray.splice(randomNumber, 1)
 
   displayNames()
 
 }
-
 
 
 
