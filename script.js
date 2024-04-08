@@ -48,7 +48,7 @@ function pickRandomName () {
 
   randomNameDiv.textContent = randomName
 
-  randomNameDiv.innerHTML = `Congrats <span class="color">${randomName}</span>, you were chosen!`
+  randomNameDiv.innerHTML = `Congrats ${randomName}, you were chosen!`
 
 
   nameArray.splice(randomNumber, 1)

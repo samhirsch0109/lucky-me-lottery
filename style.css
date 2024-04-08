@@ -10,16 +10,15 @@ h1 {
 
 p {
     color: #1971be; 
-    font-size: larger;
+    font-size: large;
+    
 }
 
-/* Style the input box */
 #nameInput {
     border-radius: 30px;
     background-color: aliceblue;
 }
 
-/* Style the Add Name button */
 #addNameBtn {
     border-radius: 10px;
     background-color: rgb(122, 148, 203);
@@ -37,7 +36,6 @@ p {
     background-color: rgb(25, 78, 118);
 }
 
-/* Style the list of names */
 .list-group-item {
     background-color: rgb(152, 122, 184);
     color: rgb(172, 172, 222);
