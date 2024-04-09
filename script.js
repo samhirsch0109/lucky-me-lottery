@@ -54,14 +54,14 @@ function pickRandomName () {
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  //display name
-  //if there is a name there show message 
-  if (randomName) {
-        randomNameDiv.innerHTML = `<span style="font-family: 'Open Sans'>Congratulations, ${randomName}! You've been chosen!</span>`;
-    } else { // If no names left in array, show this
-        randomNameDiv.innerHTML = `<span style="font-family: 'Rubik Scribble', sans-serif;">No names left to choose from. Please add more names.</span>`;
-    }
 
+     // Display name
+    // If there is a name, show message
+    if (randomName) {
+      randomNameDiv.innerHTML = `<span style="font-family: 'Open Sans';">Congratulations, ${randomName}! You've been chosen!</span>`;
+  } else { // If no names left in array, show this
+      randomNameDiv.innerHTML = `<span style="font-family: 'Open Sans';">No names left to choose from. Please add more names.</span>`;
+  }
 
 
 //remove name from array
