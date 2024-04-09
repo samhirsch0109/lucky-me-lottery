@@ -55,9 +55,14 @@ function pickRandomName () {
   const randomName = nameArray[randomNumber]
 
   //display name
-  randomNameDiv.textContent = randomName
+  //if there is a name there show message 
+  if (randomName) {
+        randomNameDiv.innerHTML = `<span style="font-family: 'Open Sans'>Congratulations, ${randomName}! You've been chosen!</span>`;
+    } else { // If no names left in array, show this
+        randomNameDiv.innerHTML = `<span style="font-family: 'Rubik Scribble', sans-serif;">No names left to choose from. Please add more names.</span>`;
+    }
 
-  randomNameDiv.innerHTML = `Congrats ${randomName}, you were chosen!`
+
 
 //remove name from array
   nameArray.splice(randomNumber, 1)

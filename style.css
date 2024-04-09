@@ -3,9 +3,10 @@ body {
 }
 
 h1 {
-    color: #164a82; 
-    margin-bottom: 20px; 
-    font-family: "Rubik Scribble", system-ui;
+    color: #164a82;
+    margin-bottom: 30px; 
+    font-family: "Rubik Scribble";
+    font-size: xx-large;
 }
 
 p {
@@ -14,14 +15,15 @@ p {
 }
 
 #nameInput {
-    border-radius: 30px;
-    background-color: aliceblue;
+    border-radius: 20px; 
+    background-color: #fff; 
+    border: 2px solid #ccc; 
 }
 
 #addNameBtn {
     border-radius: 10px;
     background-color: rgb(122, 148, 203);
-    border: none;
+    border: 2px ;
 }
 #addNameBtn:hover {
     background-color: rgb(25, 78, 118);
@@ -52,6 +54,5 @@ p {
 .list-group-item {
     display: flex;
     justify-content: center;
-    font-family: Oswald;
 }
 
